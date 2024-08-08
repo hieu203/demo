@@ -1,0 +1,205 @@
+/* menu ---------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#menu {
+    background-color: azure;
+    box-shadow: 0px 3px 5px #fa8072;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    text-align: center;
+    z-index: 1;
+}
+
+#menu img {
+    padding-top: 10px;
+    margin-right: 100px;
+}
+
+.danhmuc {
+    display: inline;
+    position: relative;
+    right: 50px;
+    bottom: 10px;
+}
+
+.danhmuc a {
+    text-decoration: none;
+    margin-left: 30px;
+    color: black;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.danhmuc a:hover {
+    transition: 0.3s ease;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    padding: 5px 0;
+    color: #fa8072;
+}
+
+/* form */
+#containerform {
+    background-size: 200% 100% !important;
+    animation: move 3.5s ease infinite;
+    transform: translate3d(0, 0, 0);
+    background: linear-gradient(45deg, #a8f6fc 10%, #e9c27f 90%);
+    min-height: 1000px;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.user {
+    max-width: 800px;
+    margin: 100px auto;
+    margin-bottom: 0;
+}
+
+.user__header {
+    text-align: center;
+    opacity: 0;
+    animation: arrive 500ms ease-in-out 0.5s forwards;
+}
+
+.user__header h1 {
+    font-size: 50px;
+}
+
+.user__title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form {
+    margin-top: 40px;
+    border-radius: 6px;
+    width: 900px;
+    overflow: hidden;
+    opacity: 0;
+    animation: arrive 500ms ease-in-out 0.5s forwards;
+}
+
+.form__input {
+    color: black;
+    background-color: #20326A00;
+    display: block;
+    width: 100%;
+    padding: 20px;
+    border: 0;
+    outline: 0;
+    transition: 0.3s;
+    border-radius: 5px;
+    border-bottom: 1px solid;
+}
+
+.form__input:focus {
+    background-color: #f9d8bd;
+}
+
+.btn {
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 20px;
+    border: 0;
+    color: black;
+    transition: 0.3s;
+    background-color: #20326A00;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    transition: ease 1.5s;
+    background-color: #f9d8bd;
+    color: black;
+    box-shadow: 0px 0px 30px rgb(206, 73, 91);
+}
+
+@keyframes arrive {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 50px, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes move {
+    0% {
+        background-position: 0 0
+    }
+
+    50% {
+        background-position: 100% 0
+    }
+
+    100% {
+        background-position: 0 0
+    }
+}
+
+/* footer-----------------------------------*/
+#containerchan {
+    width: 100%;
+    min-height: 1000px;
+    background-color: #1E1F23;
+}
+
+.phanchan {
+    min-height: 1000px;
+    width: 1100px;
+    margin: 0px auto;
+    display: block;
+}
+
+.phanchan h1 {
+    padding-top: 100px;
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+}
+
+.phanchan .boxanh {
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.phanchan .boxchu {
+    border-top: 3px solid #e92813;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+
+.chu .tieude h2 {
+    margin-top: 20px;
+    color: #F26722;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.chu .noidung p {
+    color: whitesmoke;
+    margin-top: 30px;
+}
+
+.noidung a {
+    text-decoration: none;
+}
+
+.noidung p:hover {
+    color: aqua;
+}

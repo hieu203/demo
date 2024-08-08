@@ -1,0 +1,280 @@
+/* menu ---------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#menu {
+    background-color: azure;
+    box-shadow: 0px 3px 5px #fa8072;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    text-align: center;
+    z-index: 1;
+}
+
+#menu img {
+    padding-top: 10px;
+    margin-right: 100px;
+}
+
+.danhmuc {
+    display: inline;
+    position: relative;
+    right: 20px;
+    bottom: 10px;
+}
+
+.danhmuc a {
+    text-decoration: none;
+    margin-left: 30px;
+    color: black;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.danhmuc a:hover {
+    transition: 0.3s ease;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    padding: 5px 0;
+    color: #fa8072;
+}
+
+/* banner */
+#banner {
+    width: 100%;
+    min-height: 400px;
+    background-color: #efe9e9;
+}
+
+#banner .anh {
+    margin: 0px auto;
+    display: block;
+    height: 400px;
+    width: 1100px;
+    background: url(img/Background-sach-background-book.jpg);
+    background-size: 100% 100%;
+    margin-top: 75px;
+    border-radius: 5px;
+}
+
+/* thân 1 -----------------------------------*/
+#containerthan1 {
+    padding-top: 1px;
+    width: 100%;
+    min-height: 2000px;
+    background-color: #efe9e9;
+}
+
+.than1 {
+    max-width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.than1 img {
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    margin-left: 40px;
+}
+
+.than1 img:hover {
+    transition: ease 0.5s;
+    width: 300px;
+    height: 550px;
+    box-shadow: 3px 3px 30px #fa8072;
+}
+
+.than1 h1 {
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 30px 30px;
+    padding-top: 50px;
+}
+
+/* thân 2------------------------------------------ */
+#containerthan2 {
+    width: 100%;
+    min-height: 500px;
+    background-color: darksalmon;
+    display: block;
+}
+
+.than2 {
+    min-height: 500px;
+    margin: 0 auto;
+    max-width: 1100px;
+    display: block;
+}
+
+.boxslide {
+    display: flex;
+    overflow: hidden;
+}
+
+.boxslide:before {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    content: "";
+    width: 500px;
+    height: 510px;
+    background: linear-gradient(-90deg, hsla(0, 0%, 96.9%, 0), #f7f7f7);
+}
+
+.boxslide:after {
+    position: absolute;
+    right: 0;
+    content: "";
+    width: 500px;
+    height: 510px;
+    background: linear-gradient(90deg, hsla(0, 0%, 96.9%, 0), hsla(0, 0%, 96.9%, 0.99)99%);
+}
+
+.slide-track {
+    display: flex;
+    animation: scroll 35s linear infinite;
+    -webkit-animation: scroll 20s linear infinite;
+}
+
+.slide img {
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    margin-left: 30px;
+}
+
+@keyframes scroll {
+    100% {
+        transform: translateX(calc(-250px * 5));
+    }
+}
+
+/* thân3---------------------------------- */
+#containerthan3 {
+    width: 100%;
+    min-height: 700px;
+    background-image: url(img/Frame-40046.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.than3 {
+    max-width: 1150px;
+    min-height: 850px;
+    margin: 0 auto;
+    display: block;
+}
+
+.chudai {
+    padding-top: 150px;
+    width: 750px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 100px;
+}
+
+.chudai p {
+    color: white;
+    font-size: 30px;
+    line-height: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.thongso {
+    display: flex;
+    justify-content: space-around;
+}
+
+.thongso .chu {
+    font-size: 20px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.thongso .so {
+    font-size: 40px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.than3 button {
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+    margin-top: 130px;
+    width: 180px;
+    height: 50px;
+    background-color: #20326A00;
+    color: lightpink;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    border-color: white;
+}
+
+.than3 button:hover {
+    transition: ease 1.5s;
+    background-color: white;
+    color: black;
+}
+
+/* footer--------------------------------- */
+#containerchan {
+    width: 100%;
+    min-height: 1000px;
+    background-color: #1E1F23;
+}
+
+.phanchan {
+    min-height: 1000px;
+    width: 1100px;
+    margin: 0px auto;
+    display: block;
+}
+
+.phanchan h1 {
+    padding-top: 100px;
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+}
+
+.phanchan .boxanh {
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.phanchan .boxchu {
+    border-top: 3px solid #e92813;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+
+.chu .tieude h2 {
+    margin-top: 20px;
+    color: #F26722;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.chu .noidung p {
+    color: whitesmoke;
+    margin-top: 30px;
+}
+
+.noidung a {
+    text-decoration: none;
+}
+
+.noidung p:hover {
+    color: aqua;
+}
